@@ -5,8 +5,6 @@
 
 ### Steps to run Backend Server
 git clone https://github.com/gmrzone/FullstackInfiniteScroll.git
-
-#### After cloning, move into the directory having the project files using the change directory command
 cd Backend
 
 #### Create Virtual Environment
@@ -19,7 +17,7 @@ source env/bin/activate
 pip install -r requirements.txt
 
 #### Run Server
-python manage,py Runserver
+python manage.py Runserver
 
 
 #### All image are rendered using a Custom Image Component created using IntersectionObserver Api to only Load Image when Image is in view else render a placeholder so that not all images are loaded on page load to give performance boost
@@ -33,6 +31,19 @@ python manage,py Runserver
 #### "/infinite-scroller"** route contain infinite scroller to lazyLoad data as soon as user scroll to bottom using Javascript Intersection Observer Api<br>
 
 #### "/swr route contains"** infinite scroller using useSWR to improve performance <br>
+
+
+### Steps to run Frontend Server
+
+#### After cloning, change directory to Frontend
+cd frontend
+
+#### install dependencies
+npm install
+
+#### Run Server
+npm start
+
 
 
 
