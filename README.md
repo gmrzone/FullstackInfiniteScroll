@@ -1,4 +1,4 @@
-## FullstackInfiniteScroll using React as Frontend and Django as Backend
+## Fullstack InfiniteScroll using React as Frontend and Django as Backend
 ![infiniteSAcroll3](https://user-images.githubusercontent.com/65633542/116314846-80899300-a764-11eb-9859-b6397bfc0905.gif)
 ### Backend is created using Django and contains 500 Company dummy data with images to test Infinite scroll, Pagination and Lazy loading of Image
 
