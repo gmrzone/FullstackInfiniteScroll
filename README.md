@@ -6,7 +6,7 @@
 
 ### Frontend is create using React and Contains 4 Routes
 
-#### "/"** route contains normal pagination with a View More Button (User have to click view more to load more data) <br>
+#### "/" route contains normal pagination with a View More Button (User have to click view more to load more data) <br>
 
 #### "/paginator"** route containg pagination with page number (User can click on page no to view that page) <br>
 
