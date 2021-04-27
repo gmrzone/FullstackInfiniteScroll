@@ -4,7 +4,7 @@ import {Switch, Route} from  'react-router-dom'
 import Pagination from './pages/Pagination'
 import InfiniteScroller from './pages/InfiniteScroller'
 import PaginationTwo from './pages/PaginationTwo'
-import Demo from './pages/Demo';
+import InfiniteScrollerSWR from './pages/InfiniteScrollerSWR';
 import { CompanyListPaginationProvider } from './context/PaginationContext'
 import { PaginatorTwoProvider } from './context/PaginationTwoContext'
 function App() {
@@ -22,8 +22,13 @@ function App() {
               <PaginationTwo />
           </PaginatorTwoProvider>
         </Route>
-        <Route component={InfiniteScroller} path="/infinite-scroller" exact />
-        <Route component={Demo} path="/demo" exact />
+        <Route path="/infinite-scroller" exact >
+          <CompanyListPaginationProvider>
+            <InfiniteScroller />
+          </CompanyListPaginationProvider>
+        </Route>
+        {/* <Route component={InfiniteScroller} path="/infinite-scroller" exact /> */}
+        <Route component={InfiniteScrollerSWR} path="/swr" exact />
     </Switch>
     </>
   );

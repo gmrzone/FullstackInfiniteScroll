@@ -10,10 +10,11 @@ const LazyLoadImage = ({ src, alt, style }) => {
 
     useEffect(() => {
         const option = {}
-        const observer = new IntersectionObserver(entries => {
+        const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(x => {
                 if (x.isIntersecting){
                     setInView(true)
+                    observer.unobserve(x.target)
                 }
             })
         }, option)

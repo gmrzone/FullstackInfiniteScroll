@@ -6,7 +6,7 @@ const Header = () => {
             <Link className={`${path === "/" && "active"} item`} to="/">Pagination</Link>
             <Link className={`${path === "/paginator" && "active"} item`} to="/paginator">Pagination Two</Link>
             <Link className={`${path === "/infinite-scroller" && "active"} item`} to="/infinite-scroller">Infinite Scroller</Link>
-            <Link className={`${path === "/demo" && "active"} item`} to="/demo">InfiniteScroll (useSWR)</Link>
+            <Link className={`${path === "/demo" && "active"} item`} to="/swr">InfiniteScroll (useSWR)</Link>
         </div>
     )
 }

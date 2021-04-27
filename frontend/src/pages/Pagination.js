@@ -12,7 +12,7 @@ const Pagination = () => {
     const RenderPlaceHolder = () => {
         const ph = []
         for (let i = 1; i <= 9 ; i++){
-            ph.push(<CompanyItemPlaceHolder />)
+            ph.push(<CompanyItemPlaceHolder key={i}/>)
         }
         return ph
     }
