@@ -2,6 +2,25 @@
 ![infiniteSAcroll3](https://user-images.githubusercontent.com/65633542/116314846-80899300-a764-11eb-9859-b6397bfc0905.gif)
 ### Backend is created using Django and contains list of 500 Company dummy data in database with images to test Infinite scroll, Pagination and Lazy loading of Image
 
+
+Steps to run Backend Server
+
+git clone https://github.com/gmrzone/FullstackInfiniteScroll.git
+### After cloning, move into the directory having the project files using the change directory command
+cd Backend
+### Create Virtual Environment
+python -m venv env
+
+### Activate Virtual Environment
+source env/bin/activate
+
+### install dependencies
+pip install -r requirements.txt
+
+### Run Server
+python manage,py Runserver
+
+
 #### All image are rendered using a Custom Image Component created using IntersectionObserver Api to only Load Image when Image is in view else render a placeholder so that not all images are loaded on page load to give performance boost
 
 ### Frontend is create using React and Contains 4 Routes
