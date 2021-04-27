@@ -6,11 +6,11 @@
 
 ### Frontend is create using React and Contains 4 Routes
 
-#### "/"** route contains normal pagination with view More Button (User have to click view more to load more data) <br>
+#### "/"** route contains normal pagination with a View More Button (User have to click view more to load more data) <br>
 
 #### "/paginator"** route containg pagination with page number (User can click on page no to view that page) <br>
 
-#### "/infinite-scroller"** route contain infinite scroller to lazyLoad data as soon as user scroll to bottom <br>
+#### "/infinite-scroller"** route contain infinite scroller to lazyLoad data as soon as user scroll to bottom using Javascript Intersection Observer Api<br>
 
 #### "/swr route contains"** infinite scroller using useSWR to improve performance <br>
 
