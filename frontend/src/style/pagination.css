@@ -1,0 +1,22 @@
+.load_button_container {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 15px;
+}
+.afzal:hover {
+    background-color: rgba(0,0,0,.05) !important;
+    cursor: pointer;
+}
+@media (min-width: 993px){
+    .load_button_container {
+
+        padding: 0 20px;
+    }
+}
+@media (min-width: 1200px){
+    .load_button_container {
+
+        padding: 0 40px;
+    }
+}

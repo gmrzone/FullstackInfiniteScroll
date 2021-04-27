@@ -1,0 +1,32 @@
+[
+{
+    "model": "products.company",
+    "pk": "1e88e95e-1872-40c7-86d2-d9137611518f",
+    "fields": {
+        "name": "dghfgh",
+        "description": "fghfghj",
+        "email": "fghjfgj@gmail.com",
+        "tagline": "adsfsdgf",
+        "image": "default-product-image.png",
+        "slug": "dghfgh",
+        "capital": "5000.00",
+        "created": "2021-04-24",
+        "updated": "2021-04-24"
+    }
+},
+{
+    "model": "products.company",
+    "pk": "7883b897-e780-46db-a19f-052ae89b20d1",
+    "fields": {
+        "name": "Afzal",
+        "description": "Afzal",
+        "email": "saiyedafzalgz@gmail.com",
+        "tagline": "dgfsdfgdfg",
+        "image": "default-product-image.png",
+        "slug": "afzal",
+        "capital": "100000000.00",
+        "created": "2021-04-24",
+        "updated": "2021-04-24"
+    }
+}
+]
