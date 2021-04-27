@@ -16,11 +16,12 @@ const InfiniteScroller = () => {
         }
         return ph
     }
-    const loadNextPage = () => {
-        setLoading(true)
-        getPage(setLoading)
-    }
+
     useEffect(() => {
+        const loadNextPage = () => {
+            setLoading(true)
+            getPage(setLoading)
+        }
         const options = {
             rootMargin: '100px'
         }
@@ -36,7 +37,7 @@ const InfiniteScroller = () => {
             })
         }, options)
         observer.observe(loaderRef.current)
-    }, [])
+    }, [getPage])
     return (
         <div className="ui container">
             <h1 style={{textAlign: 'center'}}>Company List</h1>
