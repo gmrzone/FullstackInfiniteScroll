@@ -3,21 +3,22 @@
 ### Backend is created using Django and contains list of 500 Company dummy data in database with images to test Infinite scroll, Pagination and Lazy loading of Image
 
 
-Steps to run Backend Server
-
+### Steps to run Backend Server
 git clone https://github.com/gmrzone/FullstackInfiniteScroll.git
-### After cloning, move into the directory having the project files using the change directory command
+
+#### After cloning, move into the directory having the project files using the change directory command
 cd Backend
-### Create Virtual Environment
+
+#### Create Virtual Environment
 python -m venv env
 
-### Activate Virtual Environment
+#### Activate Virtual Environment
 source env/bin/activate
 
-### install dependencies
+#### install dependencies
 pip install -r requirements.txt
 
-### Run Server
+#### Run Server
 python manage,py Runserver
 
 
