@@ -20,7 +20,7 @@ pip install -r requirements.txt
 python manage.py Runserver
 
 
-#### All image are rendered using a Custom Image Component created using IntersectionObserver Api to only Load Image when Image is in view else render a placeholder so that not all images are loaded on page load to give performance boost
+#### All image are rendered using a Custom Image Component created using IntersectionObserver Api To LAzy Load Images when Image is in view else render a placeholder so that not all images are loaded on page load to give performance boost
 
 ### Frontend is create using React and Contains 4 Routes
 
