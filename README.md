@@ -4,7 +4,7 @@
 
 
 ### Steps to run Backend Server
-git clone https://github.com/gmrzone/FullstackInfiniteScroll.git
+git clone https://github.com/gmrzone/FullstackInfiniteScroll.git <br>
 cd Backend
 
 #### Create Virtual Environment
