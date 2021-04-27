@@ -2,9 +2,9 @@
 ![infiniteSAcroll3](https://user-images.githubusercontent.com/65633542/116314846-80899300-a764-11eb-9859-b6397bfc0905.gif)
 ### Backend is created using Django and contains 500 Company dummy data with images to test Infinite scroll, Pagination and Lazy loading of Image
 
-### Frontend is create using React and Contains 4 Routes
-
 #### All image are rendered using a Custom Image Component created using IntersectionObserver Api to only Load Image when in view else render a placeholder so that not all images are loaded on page load to give performance boost
+
+### Frontend is create using React and Contains 4 Routes
 
 #### "/"** route contains normal pagination with view More Button (User have to click view more to load more data) <br>
 
