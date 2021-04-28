@@ -6,8 +6,8 @@ import CompanyItem from '../components/CompanyItem'
 const Pagination = () => {
     const [loading, setLoading] = useState(false)
     const { data, getPage, pageLoading, empty_page } = useContext(CompanyListPaginationContext)
-    const renderCompanyList = data?.map(x => {
-        return <CompanyItem key={x.id} companyData={x}/>
+    const renderCompanyList = data?.map((x, i) => {
+        return <CompanyItem key={x.id + i} companyData={x}/>
     })
     const RenderPlaceHolder = () => {
         const ph = []

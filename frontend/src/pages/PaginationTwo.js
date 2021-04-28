@@ -6,8 +6,8 @@ import PaginatorTwoPag from '../components/PaginatorTwoPag'
 import CompanyItemPlaceHolder from '../components/CompanyItemPlaceHolder'
 const PaginationTwo = () => {
     const {currentPage: {data, current_page, last_page}, getPage, loading} = useContext(PaginationTwoContext)
-    const renderCompanyList = data?.map(x => {
-        return <CompanyItem key={x.id} companyData={x}/>
+    const renderCompanyList = data?.map((x, i) => {
+        return <CompanyItem key={x.id + i} companyData={x}/>
     })
     const RenderPlaceHolder = () => {
         const ph = []
