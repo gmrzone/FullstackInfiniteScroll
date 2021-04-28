@@ -37,7 +37,7 @@ const InfiniteScroller = () => {
             })
         }, options)
         observer.observe(loaderRef.current)
-    }, [getPage])
+    }, [])
     return (
         <div className="ui container">
             <h1 style={{textAlign: 'center'}}>Company List</h1>
@@ -45,7 +45,6 @@ const InfiniteScroller = () => {
                 {pageLoading ? RenderPlaceHolder() : renderCompanyList}
             </div>
             <div className="ui active centered medium inline loader" style={{fontSize: "35px", marginTop: "15px", marginBottom: '15px', height: "50px", opacity: loading ? "1" : "0"}} ref={loaderRef}>
-
             </div>
         </div>
     )
