@@ -5,7 +5,7 @@ import CompanyItemPlaceHolder from '../components/CompanyItemPlaceHolder'
 import CompanyItem from '../components/CompanyItem'
 const Pagination = () => {
     const [loading, setLoading] = useState(false)
-    const { data, getPage, pageLoading } = useContext(CompanyListPaginationContext)
+    const { data, getPage, pageLoading, empty_page } = useContext(CompanyListPaginationContext)
     const renderCompanyList = data?.map(x => {
         return <CompanyItem key={x.id} companyData={x}/>
     })
@@ -16,9 +16,12 @@ const Pagination = () => {
         }
         return ph
     }
+    console.log(empty_page)
     const loadNextPage = () => {
-        setLoading(true)
-        getPage(setLoading)
+        if (!empty_page){
+            setLoading(true)
+            getPage(setLoading)
+        }
     }
     return (
         <div className="ui container">
@@ -27,8 +30,8 @@ const Pagination = () => {
                 {pageLoading ? RenderPlaceHolder() : renderCompanyList}
             </div>
             <div className="load_button_container">
-                <button className={`ui primary button ${loading && "loading"}`} style={{width: '100%'}} onClick={loadNextPage}>
-                    Load More
+                <button className={`ui primary button ${loading && "loading"} ${empty_page && "disabled"}`} style={{width: '100%'}} onClick={loadNextPage}>
+                    {empty_page ? "No More Page" : "Load More"}
                 </button>
             </div>
         </div>

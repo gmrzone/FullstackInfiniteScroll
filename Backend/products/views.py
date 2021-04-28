@@ -23,6 +23,7 @@ def company_list(request):
         query = paginator.page(1)
     except EmptyPage:
         query = paginator.page(paginator.num_pages)
+        return Response({"empty_page": True, "data": None})
     serializer = CompanySerializer(query, many=True)
     data = {"current_page": page, "last_page": paginator.num_pages , "data":  serializer.data}
     return Response(data)

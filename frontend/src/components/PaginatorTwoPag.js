@@ -2,7 +2,7 @@ const PaginatorTwoPag = ({ currentPage, LastPage, changePage }) => {
     currentPage = parseInt(currentPage)
     const renderPagBlock = () => {
         const blocks = []
-        for (let i = currentPage; i <= (currentPage + 3); i++){
+        for (let i = currentPage; i <= (currentPage + 3) && i <= parseInt(LastPage); i++){
             blocks.push(
                 <span className={`${currentPage === i && "active"} item afzal`} key={i} onClick={() => changePage(i)}>
                     {i}

@@ -7,6 +7,7 @@ import PaginationTwo from './pages/PaginationTwo'
 import InfiniteScrollerSWR from './pages/InfiniteScrollerSWR';
 import { CompanyListPaginationProvider } from './context/PaginationContext'
 import { PaginatorTwoProvider } from './context/PaginationTwoContext'
+import { InfiniteScrollerSWRProvider } from './context/InfiniteScrollerSWRContext'
 function App() {
   return (
     <>
@@ -27,8 +28,13 @@ function App() {
             <InfiniteScroller />
           </CompanyListPaginationProvider>
         </Route>
+        <Route path="/swr"  exact>
+            <InfiniteScrollerSWRProvider>
+                <InfiniteScrollerSWR />
+            </InfiniteScrollerSWRProvider>
+        </Route>
         {/* <Route component={InfiniteScroller} path="/infinite-scroller" exact /> */}
-        <Route component={InfiniteScrollerSWR} path="/swr" exact />
+        {/* <Route component={InfiniteScrollerSWR} path="/swr" exact /> */}
     </Switch>
     </>
   );

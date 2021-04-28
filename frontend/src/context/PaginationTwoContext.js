@@ -4,7 +4,7 @@ import axios from 'axios'
 const PaginationTwoContext = createContext()
 
 const PaginatorTwoProvider = ({ children }) => {
-    const [currentPage, setCurrentPage] = useState({})
+    const [currentPage, setCurrentPage] = useState([])
     const p = useRef(1)
     useEffect(() => {
         axios.get('http://127.0.0.1:8000/?page=1').then(response => {

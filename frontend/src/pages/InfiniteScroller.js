@@ -23,7 +23,7 @@ const InfiniteScroller = () => {
             getPage(setLoading)
         }
         const options = {
-            rootMargin: '100px'
+            rootMargin: '120px'
         }
         const observer = new IntersectionObserver(entries => {
             entries.forEach(x => {
