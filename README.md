@@ -13,7 +13,7 @@
 
 #### "/infinite-scroller"** route contain infinite scroller to lazyLoad data as soon as user scroll to bottom using Javascript Intersection Observer Api<br>
 
-#### "/swr"** route contains infinite scroller using useSWR to improve performance <br>
+#### "/swr"** route contains infinite scroller using useSWR <br>
 
 
 ### Steps to run Backend Server
