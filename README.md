@@ -30,7 +30,7 @@ source env/bin/activate
 pip install -r requirements.txt
 
 #### Run Server
-python manage.py Runserver
+python manage.py runserver
 
 
 ### Steps to run Frontend Server
@@ -43,3 +43,5 @@ npm install
 
 #### Run Server
 npm start
+
+#### open this link in Browser http://127.0.0.1:3000/
